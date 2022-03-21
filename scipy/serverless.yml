@@ -1,0 +1,14 @@
+service: scipy-lambda-layer
+
+provider:
+  name: aws
+  region: ap-northeast-1
+  runtime: python3.7
+
+layers:
+  scipy:
+    path: layer
+    description: scipy with Python 3.7
+    compatibleRuntimes:
+      - python3.7
+    licenseInfo: MIT License
